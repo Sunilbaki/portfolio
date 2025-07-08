@@ -1,0 +1,64 @@
+<!-- Skills Section -->
+<section id="skills" class="py-20 bg-gray-950">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Skills & Technologies</h2>
+      <p class="text-gray-400 max-w-2xl mx-auto">
+        Technologies and tools I work with to bring ideas to life.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Frontend -->
+      <div class="glass-effect p-8 rounded-xl card-hover">
+        <div class="text-4xl mb-4">🎨</div>
+        <h3 class="text-xl font-bold mb-4">Frontend Development</h3>
+        <div class="space-y-3">
+          @for (skill of frontendSkills; track skill.name) {
+            <div class="flex justify-between">
+              <span>{{ skill.name }}</span>
+              <span class="text-primary">{{ skill.level }}%</span>
+            </div>
+            <div class="w-full bg-slate-700 rounded-full h-2">
+              <div class="bg-primary h-2 rounded-full skill-bar" [style.width.%]="skill.level"></div>
+            </div>
+          }
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="glass-effect p-8 rounded-xl card-hover">
+        <div class="text-4xl mb-4">⚙️</div>
+        <h3 class="text-xl font-bold mb-4">Backend Development</h3>
+        <div class="space-y-3">
+          @for (skill of backendSkills; track skill.name) {
+            <div class="flex justify-between">
+              <span>{{ skill.name }}</span>
+              <span class="text-primary">{{ skill.level }}%</span>
+            </div>
+            <div class="w-full bg-slate-700 rounded-full h-2">
+              <div class="bg-primary h-2 rounded-full" [style.width.%]="skill.level"></div>
+            </div>
+          }
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="glass-effect p-8 rounded-xl card-hover">
+        <div class="text-4xl mb-4">🛠️</div>
+        <h3 class="text-xl font-bold mb-4">Tools & Others</h3>
+        <div class="space-y-3">
+          @for (skill of toolsSkills; track skill.name) {
+            <div class="flex justify-between">
+              <span>{{ skill.name }}</span>
+              <span class="text-primary">{{ skill.level }}%</span>
+            </div>
+            <div class="w-full bg-slate-700 rounded-full h-2">
+              <div class="bg-primary h-2 rounded-full" [style.width.%]="skill.level"></div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
