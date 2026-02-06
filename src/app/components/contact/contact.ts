@@ -6,39 +6,41 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-contact',
   imports: [CommonModule, FormsModule],
   templateUrl: './contact.html',
-  styleUrl: './contact.css'
+  styleUrls: ['./contact.css']
 })
 export class Contact {
+  
+
   contactInfo = {
-    email: 'hello@sunilbaki.com',
-    phone: '+1 (555) 123-4567',
-    location: 'New York, NY'
+    email: 'sunilbaki@gmail.com',
+    phone: '+91 849483 83516',
+    location: 'Bengalore KA'
   };
 
   socialLinks = [
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/yourprofile',
+      url: 'https://www.linkedin.com/in/sunil-baki',
       icon: 'linkedin'
     },
     {
       name: 'X (Twitter)',
-      url: 'https://x.com/yourusername',
+      url: 'https://x.com/Sunil_b16',
       icon: 'x-twitter'
     },
     {
       name: 'Instagram',
-      url: 'https://instagram.com/yourusername',
+      url: 'https://instagram.com/',
       icon: 'instagram'
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/yourusername',
+      url: 'https://github.com/Sunilbaki',
       icon: 'github'
     }
   ];
 
-  formData = {
+   formData = {
     name: '',
     email: '',
     subject: '',

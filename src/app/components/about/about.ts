@@ -14,8 +14,7 @@ export class About {
     Since then, I've worked with startups and established companies, building scalable web applications
     and mobile solutions that serve thousands of users.`;
 
-  passionText = `I'm passionate about clean code, modern design, and creating user experiences that truly matter.
-    When I'm not coding, you can find me exploring new technologies or contributing to open-source projects.`;
+  passionText = `I'm passionate about clean code, modern design, and creating user experiences that truly matters.`;
 
   stats = {
     projects: 50,
